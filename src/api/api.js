@@ -10,3 +10,7 @@ export const postNotificationData = async (data) => {
     return result.data
 };
 
+export const getRequestLog = async () => {
+  const result = await axios('http://localhost:8080/notification/requestLogs');
+  return result.data;
+}
